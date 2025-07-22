@@ -14,7 +14,8 @@ import { useEffect } from "react"
 import { useLocale } from "@/context/locale-context"
 
 // Kontakt kartalari massiv ko‘rinishida
-const CONTACT_CARDS = [
+// CONTACT_CARDS ni funksiya ko‘rinishida yozamiz
+const getContactCards = (t: (key: string) => string) => [
   {
     icon: Phone,
     iconLabel: "Telefon raqami",
@@ -22,7 +23,7 @@ const CONTACT_CARDS = [
     content: (
       <>
         <p className="text-2xl font-bold text-primary">+998 90 034 06 04</p>
-        <p className="text-muted-foreground mt-2">phone_number_hours</p>
+        <p className="text-muted-foreground mt-2">{t("phone_number_hours")}</p>
       </>
     ),
   },
@@ -33,7 +34,7 @@ const CONTACT_CARDS = [
     content: (
       <>
         <p className="text-xl font-semibold">marspaper1957@gmail.com</p>
-        <p className="text-muted-foreground mt-2">email_response_time</p>
+        <p className="text-muted-foreground mt-2">{t("email_response_time")}</p>
       </>
     ),
   },
@@ -43,9 +44,9 @@ const CONTACT_CARDS = [
     titleKey: "our_address_title",
     content: (
       <>
-        <p className="font-semibold">address_country</p>
-        <p>address_city_district</p>
-        <p>address_street</p>
+        <p className="font-semibold">{t("address_country")}</p>
+        <p>{t("address_city_district")}</p>
+        <p>{t("address_street")}</p>
       </>
     ),
   },
@@ -56,21 +57,22 @@ const CONTACT_CARDS = [
     content: (
       <div className="space-y-2">
         <div className="flex justify-between">
-          <span>monday_friday:</span>
+          <span>{t("monday_friday")}:</span>
           <span className="font-semibold">9:00 - 18:00</span>
         </div>
         <div className="flex justify-between">
-          <span>saturday:</span>
+          <span>{t("saturday")}:</span>
           <span className="font-semibold">9:00 - 15:00</span>
         </div>
         <div className="flex justify-between">
-          <span>sunday:</span>
-          <span className="text-destructive">day_off</span>
+          <span>{t("sunday")}:</span>
+          <span className="text-destructive">{t("day_off")}</span>
         </div>
       </div>
     ),
   },
 ]
+
 
 export default function Contact() {
   const { t } = useLocale()
@@ -101,27 +103,19 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Chap tarafdagi ma'lumotlar */}
           <div className="space-y-8">
-            {CONTACT_CARDS.map(({ icon: Icon, iconLabel, titleKey, content }, idx) => (
-              <Card key={titleKey}>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <Icon className="h-6 w-6 text-primary" aria-label={iconLabel} />
-                    {t(titleKey)}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {/* Dinamik tarjima uchun content ichidagi matnlarni t() bilan o'zgartiramiz */}
-                  {typeof content === "string"
-                    ? t(content)
-                    : React.cloneElement(content, {},
-                        React.Children.map(content.props.children, child =>
-                          typeof child === "string" && t(child) || child
-                        )
-                      )}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+  {getContactCards(t).map(({ icon: Icon, iconLabel, titleKey, content }) => (
+    <Card key={titleKey}>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-3">
+          <Icon className="h-6 w-6 text-primary" aria-label={iconLabel} />
+          {t(titleKey)}
+        </CardTitle>
+      </CardHeader>
+      <CardContent>{content}</CardContent>
+    </Card>
+  ))}
+</div>
+
 
           {/* Form */}
           <Card>
