@@ -63,7 +63,7 @@ export default function Products() {
                   {product.features.map((feature, idx) => (
                     <Badge
                       key={idx}
-                      className="text-xs bg-primary text-black rounded px-2 py-1"
+                      className="text-xs bg-sky-200 text-black rounded px-2 py-1 hover:bg-blue-400  transition-colors duration-200"
                     >
                       {feature}
                     </Badge>
@@ -72,10 +72,10 @@ export default function Products() {
 
 
                 <div className="text-xs text-muted-foreground italic">{product.keywords}</div>
-
-                {/* <Link href={`/products/${product.slug}`} passHref>
+{/* 
+                 <Link href={`/products/${product.slug}`} passHref>
                   <Button className="w-full bg-primary hover:bg-primary/90">{t("order_button")}</Button>
-                </Link> */}
+                </Link>  */}
               </CardContent>
             </Card>
           ))}
@@ -86,7 +86,7 @@ export default function Products() {
           <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">{t("special_orders_description")}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://t.me/Komron_m1rzo" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Button size="lg" className="bg-sky-200 hover:bg-blue-400 text-black">
                   {t("special_order_button")}
                 </Button>
               </Link>

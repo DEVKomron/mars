@@ -6,7 +6,7 @@
   "partners": "Hamkorlar",
   "gallery": "Galereya",
   "contact": "Aloqa",
-    "buy_now": "Buyurtma berish",
+  "buy_now": "Buyurtma berish",
   "back_to_home": "Ortga qaytish",
   "partners_title": "Bizning Hamkorlarimiz",
   "hero_subtitle": "Qog'oz mahsulotlar:\nмелованная бумага и самoклейка\nофсетная бумага \nгазетная бумага\nбумага крафт\nтоп лайнер \nкрафт лайнер\nцеллюлозный картон\n метталическая гребенка пружина \nламинационная плёнка",
@@ -23,7 +23,7 @@
   "about_us_title": "Mars Paper Haqida",
   "about_us_description_short": "2022-yilda tashkil etilgan Mars Paper - O'zbekiston bozorida qog'oz mahsulotlari va print xizmatlarini taqdim etuvchi zamonaviy kompaniyadir. Biz qog'ozlarni import qilib, ulardan turli mahsulotlar tayyorlaymiz.",
   "our_activity_title": "Bizning Faoliyat",
-  "our_activity_description_1": "Biz eng yaxshi chet el qog‘ozlarini (melo‘vka, kraf, ofset va boshqalar) bevosita import qilib, sizga qulay narxlarda taqdim etamiz.",
+  "our_activity_description_1": "Biz eng yaxshi chet e  l qog‘ozlarini (melo‘vka, kraf, ofset va boshqalar) bevosita import qilib, sizga qulay narxlarda taqdim etamiz.",
   "our_activity_description_2": "Biz quyidagi qog‘ozlarni to‘g‘ridan-to‘g‘ri import qilib, ulgurji va chakana savdosini amalga oshiramiz:Мелованная бумага и самоклейка, Офсетная бумага, Газетная бумага, Бумага крафт, Топ лайнер, Крафт лайнер, Целлюлозный картон, Металлическая гребенка пружина, Ламинационная плёнка.",
   "our_services_title": "Bizning Xizmatlar",
   "service_paper_products_title": "Qog'oz mahsulotlari",
@@ -445,10 +445,4 @@
   "product_nota_daftari": "Nota daftari",
   "product_banner": "Banner",
   "product_office_daftari": "Office daftari"
-
-
-
-
-
-  
 }
