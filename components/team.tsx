@@ -26,6 +26,16 @@ interface TeamMember {
 }
 
 export default function Team() {
+  const [open, setOpen] = useState(false);
+
+  const managers = [
+    { name: "Ilhom Turg'unov", link: "https://t.me/OdilPaper" },
+    { name: "Oydin Sobirova", link: "https://t.me/SamarqandManager" },
+    { name: "Aziz Karimov", link: "https://t.me/BuxoroManager" },
+    { name: "Nargiza ", link: "https://t.me/AndijonManager" },
+    { name: "Maftuna", link: "https://t.me/NamanganManager" },
+    { name: "Javlon Tohtayev", link: "https://t.me/FargonaManager" },
+  ];
   const { locale, t } = useLocale()
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([])
   const [loading, setLoading] = useState(true)
@@ -99,7 +109,7 @@ export default function Team() {
                     alt={member.name}
                     width={128}
                     height={128}
-                    className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-primary/20"
+                    className="w-50 h-50 rounded-full mx-auto object-cover border-4 border-primary/20"
                   />
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
                     <Badge className="bg-primary text-primary-foreground">{member.experience}</Badge>
@@ -134,25 +144,36 @@ export default function Team() {
             <h3 className="text-2xl font-bold text-foreground">{t("join_us_title")}</h3>
           </div>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">{t("join_us_description")}</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="https://t.me/OdilPaper" target="_blank" rel="noopener noreferrer">
-              <Badge className="bg-secondary/10 text-secondary px-4 py-2 cursor-pointer hover:opacity-80">
-                {t("job_production_specialists")}
-              </Badge>
-            </Link>
+ <div className="relative flex justify-center">
+      {/* Dropdown tugmasi */}
+      <Badge
+        className="bg-primary/10 text-primary px-4 py-2 cursor-pointer hover:opacity-80 flex items-center gap-2"
+        onClick={() => setOpen(!open)}
+      >
+        Sotuv menejerlari
+        {/* Fix: Replace missing ChevronDown with a simple SVG icon */}
+        <svg width="16" height="16" fill="none" viewBox="0 0 16 16">
+          <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </Badge>
 
-            <Link href="https://t.me/OdilPaper" target="_blank" rel="noopener noreferrer">
-              <Badge className="bg-primary/10 text-primary px-4 py-2 cursor-pointer hover:opacity-80">
-                {t("job_sales_managers")}
-              </Badge>
+      {/* Dropdown menyu */}
+      {open && (
+        <div className="absolute top-full mt-2 bg-white border shadow-lg rounded-lg w-56 z-50">
+          {managers.map((manager, index) => (
+            <Link
+              key={index}
+              href={manager.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-2 hover:bg-gray-100 text-gray-700"
+            >
+              {manager.name}
             </Link>
-
-            <Link href="https://t.me/OdilPaper" target="_blank" rel="noopener noreferrer">
-              <Badge className="bg-accent/10 text-accent-foreground px-4 py-2 cursor-pointer hover:opacity-80">
-                {t("job_logistics_specialists")}
-              </Badge>
-            </Link>
-          </div>
+          ))}
+        </div>
+      )}
+    </div>
         </div>
       </div>
     </section>

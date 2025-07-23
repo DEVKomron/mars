@@ -31,10 +31,10 @@ export default function Testimonials() {
       orderVolume: t("order_volume_200_plus_week"),
     },
     {
-      name: "Bobur Tursunov",
+      name: "Turg'unov Ilhomjon",
       position: t("testimonial_position_office_manager"),
       company: "IT Solutions Group",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/images/team/ilhomjon.jpg",
       rating: 5,
       text: t("testimonial_bobur"),
       partnership: t("partnership_1_5_years"),

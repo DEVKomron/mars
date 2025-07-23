@@ -10,18 +10,18 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mars Paper - Print Center | Daftar, A4 Qog'oz | Toshkent",
+  title: "Mars Paper - Paper Center | Qog'oz Mahsulotlari | Toshkent",
   description:
-    "Mars Paper - Toshkentda print xizmatlari, daftar, A4 qog'oz, laminatsiya. Qog'oz mahsulotlari va professional print center.",
+    "Mars Paper - Ведущая компания по производству бумажной продукции в Ташкенте",
   keywords:
-    "print center, daftar, A4 qog'oz, laminatsiya, albom, rangli qog'oz, Mars Paper, Toshkent, печать, notebook",
+    "мелованная бумага и самoклейка ,офсетная бумага,газетная бумага,бумага крафт,топ лайнер,крафт лайнер,целлюлозный картон,метталическая гребенка пружина,ламинационная плёнка",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Mars Paper - Print Center va Qog'oz Mahsulotlari",
+    title: "Mars Paper - Qog'oz Mahsulotlari",
     description:
-      "Professional print xizmatlari, daftar, A4 qog'oz, laminatsiya. Toshkent bo'ylab yetkazib berish.",
+      "мелованная бумага и самoклейка ,офсетная бумага,газетная бумага,бумага крафт,топ лайнер,крафт лайнер,целлюлозный картон,метталическая гребенка пружина,ламинационная плёнка. Toshkent bo'ylab yetkazib berish.",
     url: "https://marspaper.uz",
     siteName: "Mars Paper",
     locale: "uz_UZ",
@@ -37,12 +37,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <LocaleProvider>
-          {/* ✅ Navbar doimiy */}
           <Navigation />
-
           <main>{children}</main>
-
-          {/* ✅ Footer doimiy */}
           <Footer />
         </LocaleProvider>
         <Toaster />

@@ -58,7 +58,7 @@ export default function Hero() {
               <img
                 src="/images/mars.svg"
                 alt="Mars Paper Logo"
-                className="w-[220px] lg:w-[300px] h-auto drop-shadow-[0_0_30px_rgba(255,255,255,0.9)] brightness-125"
+                className="w-[320px] lg:w-[500px] h-auto drop-shadow-[0_0_30px_rgba(255,255,255,0.9)] brightness-125"
               />
             </div>
 

@@ -1,10 +1,7 @@
 import type { Metadata } from "next"
-import Navigation from "@/components/navigation"
 import Hero from "@/components/hero"
 import About from "@/components/about"
-import Products from "@/components/products"
 import Contact from "@/components/contact"
-import Footer from "@/components/footer"
 import Team from "@/components/team"
 import Testimonials from "@/components/testimonials"
 import Gallery from "@/components/gallery"
@@ -16,13 +13,13 @@ import Head from "next/head";
 export const metadata: Metadata = {
   title: "Mars Paper - turli hil qog'oz mahsulotlari | Toshkent",
   description:
-    "Mars Paper - Toshkentda print xizmatlari, daftar, тетрат, A4 qog'oz, laminatsiya. Qog'oz mahsulotlari va professional print center.",
+    "Mars Paper - Ведущая компания по производству бумажной продукции в Ташкенте",
   keywords:
-    "print center, daftar, тетрат, A4 qog'oz, laminatsiya, albom, rangli qog'oz, Mars Paper, Toshkent, печать, notebook",
+    "мелованная бумага и самoклейка ,офсетная бумага,газетная бумага,бумага крафт,топ лайнер,крафт лайнер,целлюлозный картон,метталическая гребенка пружина,ламинационная плёнка",
   openGraph: {
     title: "Mars Paper - Print Center va Qog'oz Mahsulotlari",
     description:
-      "Professional print xizmatlari, daftar, тетрат, A4 qog'oz, laminatsiya. Toshkent bo'ylab yetkazib berish.",
+      "мелованная бумага и самoклейка ,офсетная бумага,газетная бумага,бумага крафт,топ лайнер,крафт лайнер,целлюлозный картон,метталическая гребенка пружина,ламинационная плёнка. Toshkent bo'ylab yetkazib berish.",
     type: "website",
     locale: "uz_UZ",
   },
