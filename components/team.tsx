@@ -29,12 +29,12 @@ export default function Team() {
   const [open, setOpen] = useState(false);
 
   const managers = [
-    { name: "Ilhom Turg'unov", link: "https://t.me/OdilPaper" },
-    { name: "Oydin Sobirova", link: "https://t.me/SamarqandManager" },
-    { name: "Aziz Karimov", link: "https://t.me/BuxoroManager" },
-    { name: "Nargiza ", link: "https://t.me/AndijonManager" },
-    { name: "Maftuna", link: "https://t.me/NamanganManager" },
-    { name: "Javlon Tohtayev", link: "https://t.me/FargonaManager" },
+    { name: "Ilhom Turg'unov", link: "https://t.me/MarsPaperIlhom" },
+    { name: "Oydin Sobirova", link: "https://t.me/MP_Oydin" },
+    { name: "Aziz Karimov", link: "https://t.me/MarsPaperAziz" },
+    { name: "Nargiza ", link: "https://t.me/NargizaShuhratovna" },
+    { name: "Maftuna", link: "https://t.me/KhMaftun" },
+    { name: "Javlon Tohtayev", link: "https://t.me/Tuhktayev_2002"},
   ];
   const { locale, t } = useLocale()
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([])
