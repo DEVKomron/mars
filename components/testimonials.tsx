@@ -34,7 +34,7 @@ export default function Testimonials() {
       name: "Turg'unov Ilhomjon",
       position: t("testimonial_position_office_manager"),
       company: "IT Solutions Group",
-      image: "/images/team/ilhomjon.jpg",
+      image: "/images/team/ilhom1.jpg",
       rating: 5,
       text: t("testimonial_bobur"),
       partnership: t("partnership_1_5_years"),
