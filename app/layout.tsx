@@ -18,6 +18,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: '/images/logo.svg', sizes: 'any', type: 'image/svg+xml' },
+      { url: '/images/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/images/logo.svg',
+    apple: [
+      { url: '/images/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: "Mars Paper - Qog'oz Mahsulotlari",
     description:
@@ -28,6 +39,8 @@ export const metadata: Metadata = {
     type: "website",
   },
 }
+
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

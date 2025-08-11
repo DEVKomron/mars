@@ -26,7 +26,7 @@ export default function TeamSlideshow() {
       team: t("slideshow_quality_control_department"),
     },
     {
-      image: "/placeholder.svg?height=500&width=800&text=Jamoaviy+Muhokama",
+      image: "/images/jamoa.jpg",
       title: t("slideshow_team_discussion_title"),
       description: t("slideshow_team_discussion_description"),
       team: t("slideshow_management_team"),
@@ -102,9 +102,9 @@ export default function TeamSlideshow() {
                     src={slide.image || "/placeholder.svg"}
                     alt={slide.title}
                     aria-label={slide.title}
-                    width={800}
-                    height={500}
-                    className="w-full h-full object-cover"
+                    width={900}
+                    height={700}
+                    className="w-auto h-auto object-cover"
                     onError={(e) => handleImageError(e, slide.title)}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

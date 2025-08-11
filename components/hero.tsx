@@ -58,12 +58,12 @@ export default function Hero() {
               <img
                 src="/images/mars.svg"
                 alt="Mars Paper Logo"
-                className="w-[320px] lg:w-[500px] h-auto drop-shadow-[0_0_30px_rgba(255,255,255,0.9)] brightness-125"
+                className="w-[320px] lg:w-[800px] h-auto drop-shadow-[0_0_30px_rgba(255,255,255,0.9)] brightness-125"
               />
             </div>
 
             {/* Subtitle */}
-            <ul className="text-2xl lg:text-3xl font-bold tracking-wide max-w-fit mx-auto text-left leading-relaxed">
+            <ul className="text-2xl lg:text-2xl font-bold tracking-wide max-w-fit mx-auto text-left leading-relaxed">
               {t("hero_subtitle")
                 .split("\n")
                 .map((item, index) => (
@@ -81,7 +81,7 @@ export default function Hero() {
               <Link href={item.href} key={idx}>
                 <button
                   type="button"
-                  className="bg-white/20 backdrop-blur-sm px-7 py-3 rounded-full hover:bg-white/30 transition whitespace-nowrap text-lg text-white"
+                  className="bg-white/20 backdrop-blur-sm px-7 py-3 rounded-full hover:bg-white/30 transition whitespace-nowrap text text-white"
                   style={{ fontFamily: "Times New Roman" }}
                 >
                   {t(item.textKey)}
