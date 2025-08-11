@@ -27,47 +27,27 @@ export default function Gallery() {
 
   const galleryItems = [
     {
-      image: "/placeholder.svg?height=300&width=400&text=Ishlab+Chiqarish",
+      image: "/images/flaterazka.jpg",
       title: t("gallery_production_line_title"),
       description: t("gallery_production_line_description"),
       category: t("category_production"),
       icon: <Factory className="h-5 w-5" aria-label={t("category_production")} />,
     },
     {
-      image: "/placeholder.svg?height=300&width=400&text=Sifat+Nazorati",
-      title: t("gallery_quality_control_title"),
-      description: t("gallery_quality_control_description"),
-      category: t("category_quality_control"),
-      icon: <Award className="h-5 w-5" aria-label={t("category_quality_control")} />,
-    },
-    {
-      image: "/placeholder.svg?height=300&width=400&text=Jamoaviy+Ish",
+      image: "/images/jamoaviy.jpg",
       title: t("gallery_team_work_title"),
       description: t("gallery_team_work_description"),
       category: t("category_team"),
       icon: <Users className="h-5 w-5" aria-label={t("category_team")} />,
     },
     {
-      image: "/placeholder.svg?height=300&width=400&text=Ekologiya",
-      title: t("gallery_eco_friendly_title"),
-      description: t("gallery_eco_friendly_description"),
-      category: t("category_ecology"),
-      icon: <Leaf className="h-5 w-5" aria-label={t("category_ecology")} />,
-    },
-    {
-      image: "/placeholder.svg?height=300&width=400&text=Yetkazib+Berish",
+      image: "/images/yetkazish.jpg",
       title: t("gallery_delivery_service_title"),
       description: t("gallery_delivery_service_description"),
       category: t("category_logistics"),
       icon: <Truck className="h-5 w-5" aria-label={t("category_logistics")} />,
     },
-    {
-      image: "/placeholder.svg?height=300&width=400&text=Qadoqlash",
-      title: t("gallery_packaging_title"),
-      description: t("gallery_packaging_description"),
-      category: t("category_packaging"),
-      icon: <Camera className="h-5 w-5" aria-label={t("category_packaging")} />,
-    },
+    
   ]
 
   return (

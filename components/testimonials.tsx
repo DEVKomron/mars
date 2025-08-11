@@ -10,41 +10,13 @@ export default function Testimonials() {
   const { t } = useLocale()
 
   const testimonials = [
-    {
-      name: "Aziz Karimov",
-      position: t("testimonial_position_director"),
-      company: "Tashkent Plaza Hotel",
-      image: "/placeholder.svg?height=80&width=80",
-      rating: 5,
-      text: t("testimonial_aziz"),
-      partnership: t("partnership_2_years"),
-      orderVolume: t("order_volume_500_plus_month"),
-    },
-    {
-      name: "Malika Abdullayeva",
-      position: t("testimonial_position_purchase_manager"),
-      company: "Samarkand Restaurant Chain",
-      image: "/placeholder.svg?height=80&width=80",
-      rating: 5,
-      text: t("testimonial_malika"),
-      partnership: t("partnership_3_years"),
-      orderVolume: t("order_volume_200_plus_week"),
-    },
-    {
-      name: "Turg'unov Ilhomjon",
-      position: t("testimonial_position_office_manager"),
-      company: "IT Solutions Group",
-      image: "/images/team/ilhom1.jpg",
-      rating: 5,
-      text: t("testimonial_bobur"),
-      partnership: t("partnership_1_5_years"),
-      orderVolume: t("order_volume_50_plus_a4_month"),
-    },
+
+ 
     {
       name: "Dilshoda Rahimova",
       position: t("testimonial_position_purchase_head"),
       company: "Mega Planet Supermarket",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/images/team-default.jpeg",
       rating: 5,
       text: t("testimonial_dilshoda"),
       partnership: t("partnership_2_5_years"),
@@ -54,7 +26,7 @@ export default function Testimonials() {
       name: "Jasur Normatov",
       position: t("testimonial_position_chief_engineer"),
       company: "Construction Plus LLC",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/images/team-default.jpeg",
       rating: 5,
       text: t("testimonial_jasur"),
       partnership: t("partnership_1_year"),
@@ -64,7 +36,7 @@ export default function Testimonials() {
       name: "Nigora Yusupova",
       position: t("testimonial_position_director"),
       company: "Kids World Kindergarten",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/images/team-default.jpeg",
       rating: 5,
       text: t("testimonial_nigora"),
       partnership: t("partnership_6_months"),

@@ -14,16 +14,10 @@ export default function TeamSlideshow() {
 
   const teamImages = [
     {
-      image: "/placeholder.svg?height=500&width=800&text=Ishlab+Chiqarish",
+      image: "/images/ishlab_chiqarish.jpg",
       title: t("slideshow_production_process_title"),
       description: t("slideshow_production_process_description"),
       team: t("slideshow_production_department"),
-    },
-    {
-      image: "/placeholder.svg?height=500&width=800&text=Sifat+Nazorati",
-      title: t("slideshow_quality_control_title"),
-      description: t("slideshow_quality_control_description"),
-      team: t("slideshow_quality_control_department"),
     },
     {
       image: "/images/jamoa.jpg",
@@ -32,19 +26,13 @@ export default function TeamSlideshow() {
       team: t("slideshow_management_team"),
     },
     {
-      image: "/placeholder.svg?height=500&width=800&text=Qadoqlash",
+      image: "/images/laminatsiya11.jpg",
       title: t("slideshow_packaging_title"),
       description: t("slideshow_packaging_description"),
       team: t("slideshow_packaging_department"),
     },
     {
-      image: "/placeholder.svg?height=500&width=800&text=Yetkazib+Berish",
-      title: t("slideshow_delivery_readiness_title"),
-      description: t("slideshow_delivery_readiness_description"),
-      team: t("slideshow_logistics_department"),
-    },
-    {
-      image: "/placeholder.svg?height=500&width=800&text=Mijozlar+Bilan",
+      image: "/images/mijozlar.jpg",
       title: t("slideshow_customer_meeting_title"),
       description: t("slideshow_customer_meeting_description"),
       team: t("slideshow_sales_department"),
